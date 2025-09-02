@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5: Семантичні теги — Структура блогу</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /* Мінімальний стиль, щоб було наочно */
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Arial,
+          sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+      header,
+      nav,
+      main,
+      section,
+      article,
+      footer {
+        padding: 16px;
+      }
+      header {
+        background: #111;
+        color: #fff;
+      }
+      nav a {
+        margin-right: 12px;
+        text-decoration: none;
+        color: #0a84ff;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .brand {
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+      section h2 {
+        margin-top: 0;
+      }
+      article {
+        border: 1px solid #eee;
+        border-radius: 8px;
+        padding: 16px;
+        margin-bottom: 16px;
+      }
+      article h3 {
+        margin-top: 0;
+      }
+      .meta {
+        color: #666;
+        font-size: 0.9rem;
+      }
+      footer {
+        background: #f6f6f6;
+        color: #333;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Шапка сторінки -->
+    <header>
+      <div class="container">
+        <div class="brand">Мій Блог</div>
+        <!-- Основна навігація може бути у header або окремо -->
+        <nav aria-label="Головна навігація">
+          <a href="#">Головна</a>
+          <a href="#">Пости</a>
+          <a href="#">Про мене</a>
+          <a href="#">Контакти</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Основний унікальний вміст сторінки -->
+    <main class="container">
+      <!-- Тематичний розділ зі своїм заголовком -->
+      <section aria-labelledby="latest-posts">
+        <h2 id="latest-posts">Останні публікації</h2>
+
+        <!-- Самостійний матеріал (стаття) -->
+        <article>
+          <header>
+            <h3>Як почати з HTML5 семантики</h3>
+            <p class="meta">Опубліковано: 31 серпня 2025</p>
+          </header>
+          <p>
+            Семантичні теги роблять сторінку зрозумілішою для пошуковиків і
+            технологій доступності. У цій статті — базові принципи та приклади.
+          </p>
+          <p><a href="#">Читати далі →</a></p>
+          <footer class="meta">Теги: HTML5, семантика</footer>
+        </article>
+
+        <article>
+          <header>
+            <h3>Структура блогу: від header до footer</h3>
+            <p class="meta">Опубліковано: 28 серпня 2025</p>
+          </header>
+          <p>
+            Розбираємо практичну розмітку блогу: шапка з меню, головний вміст у
+            <code>&lt;main&gt;</code>, розділи в <code>&lt;section&gt;</code> та
+            окремі пости в <code>&lt;article&gt;</code>.
+          </p>
+          <p><a href="#">Читати далі →</a></p>
+          <footer class="meta">Теги: верстка, практика</footer>
+        </article>
+      </section>
+
+      <!-- Інший розділ за потреби -->
+      <section aria-labelledby="news">
+        <h2 id="news">Новини блогу</h2>
+        <p>Невелике оновлення дизайну та плани на наступні пости.</p>
+      </section>
+    </main>
+
+    <!-- Підвал сторінки -->
+    <footer>
+      <div class="container">
+        <p>© 2025 Мій Блог. Усі права захищено.</p>
+        <nav aria-label="Посилання в підвалі">
+          <a href="#">Політика конфіденційності</a> •
+          <a href="#">Умови використання</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
