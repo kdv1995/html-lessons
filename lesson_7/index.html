@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML: Медіа — відео та аудіо</title>
+  </head>
+  <body>
+    <h1>Медіа в HTML</h1>
+
+    <!-- Відео -->
+    <h2>Відео</h2>
+    <video src="video-sample.mp4" controls width="400">
+      Ваш браузер не підтримує відео.
+    </video>
+
+    <h3>Відео з автозапуском та зацикленням</h3>
+    <video src="video-sample.mp4" controls autoplay muted loop width="400">
+      Ваш браузер не підтримує відео.
+    </video>
+
+    <!-- Аудіо -->
+    <h2>Аудіо</h2>
+    <audio src="audio_sample.mp3" controls>
+      Ваш браузер не підтримує аудіо.
+    </audio>
+
+    <!-- YouTube iframe -->
+    <h2>YouTube відео</h2>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/Bl-h8-7ZQjo?si=l0wUyUH5t62508eH"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
